@@ -1,0 +1,18 @@
+.apresentacao {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.txt-sobre {
+    padding: 30px 8%;
+}
+
+h3{
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+.txt-sobre p {
+    margin: 2px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+}
