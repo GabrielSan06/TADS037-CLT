@@ -1,18 +1,29 @@
-.apresentacao {
+.topo {
     text-align: center;
     font-family: 'Courier New', Courier, monospace;
 }
 
-.txt-sobre {
-    padding: 30px 8%;
+.topo-apresentacao img {
+    height: 270px;
+    width: auto;
+}
+
+.topo-redes img {
+    width: 32px;
+}
+
+.topo-redes a {
+    display: inline-block;
 }
 
 h3{
     font-family: 'Courier New', Courier, monospace;
     text-align: center;
 }
-.txt-sobre p {
+.conteudo {
     margin: 2px;
     font-family: 'Times New Roman', Times, serif;
     font-size: 16px;
+    padding: 10px 8%;
 }
+
