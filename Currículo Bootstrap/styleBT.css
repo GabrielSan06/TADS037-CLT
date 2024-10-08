@@ -1,0 +1,29 @@
+:root {
+    --text-color: #eef7ff;
+    --bg-color: #4d968c;
+}
+
+#nav {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+} 
+
+#foto {
+    height: 270px;
+    width: auto;
+    margin-top: 60px;
+    border-radius: 25px 10px;
+}
+
+a#menu {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+a#menu:hover {
+    color: #eef7ffb9;
+}
+
+.bgColor {
+    background-color: #d3f0ec7e;
+}
