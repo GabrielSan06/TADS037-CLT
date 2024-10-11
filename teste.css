@@ -1,0 +1,43 @@
+/* Estilos principais */
+body {
+    background-color: #E8FFCE;
+    color: #333;
+}
+
+h2 {
+    color: #7C73C0;
+    font-weight: bold;
+}
+
+.navbar {
+    background-color: #7C73C0; /* Cor roxa */
+}
+
+.nav-link {
+    color: white;
+}
+
+.nav-link:hover {
+    color: #ACFADF; /* Cor azul claro */
+}
+
+.logo {
+    width: 90px;
+    padding-left: 20px;
+}
+
+footer {
+    background-color: #94ADD7;
+    color: white;
+}
+
+/* Estilizando as seções */
+section {
+    padding: 40px 0;
+}
+
+footer {
+    background-color: #7C73C0;
+    color: white;
+    padding: 20px;
+}
