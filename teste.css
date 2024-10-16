@@ -10,10 +10,12 @@ body {
 .navbar .nav-link {
     color: white;
     transition: color 0.3s ease;
+    transition: transform 0.3s ease;
 }
 
 .navbar .nav-link:hover {
     color: #94ADD7; /* Efeito de hover no link */
+    transform: scale(1.1);
 }
 
 .navbar {
@@ -29,6 +31,13 @@ body {
 
 .logo:hover {
     transform: scale(1.1); /* Aumenta ligeiramente a logo quando o mouse passa sobre ela */
+}
+
+.image {
+    height: 350px;
+    width: auto;
+    border-radius: 30px 15px;
+    border: 5px;
 }
 
 /* Estilizando as seções */
