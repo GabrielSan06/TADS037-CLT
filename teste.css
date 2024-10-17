@@ -6,11 +6,14 @@ body {
     scroll-behavior: smooth; /* Scroll suave sem JS */
 }
 
-/* Transição para links do menu */
+.navbar {
+    background-color: #7C73C0; /* Cor roxa */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
 .navbar .nav-link {
     color: white;
-    transition: color 0.3s ease;
-    transition: transform 0.3s ease;
+    transition: color 0.3s ease, transform 0.3s ease;
 }
 
 .navbar .nav-link:hover {
@@ -18,19 +21,14 @@ body {
     transform: scale(1.1);
 }
 
-.navbar {
-    background-color: #7C73C0; /* Cor roxa */
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Adiciona sombra para mais destaque */
-}
-
 .logo {
     margin-left: 40px;
     width: 100px;
-    transition: transform 0.3s ease; /* Transição de animação ao passar o mouse */
+    transition: transform 0.3s ease; /* Animação ao passar o mouse */
 }
 
 .logo:hover {
-    transform: scale(1.1); /* Aumenta ligeiramente a logo quando o mouse passa sobre ela */
+    transform: scale(1.1); /* Aumento ao passar o mouse */
 }
 
 .image {
@@ -43,6 +41,9 @@ body {
 /* Estilizando as seções */
 .section {
     padding: 60px 0;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 1s forwards ease-in-out;
 }
 
 h2 {
@@ -69,19 +70,45 @@ p {
     line-height: 1.6;
 }
 
+/* Estilo da tabela */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #c2cee2;
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9; /* Alternância de cores nas linhas */
+}
+
+tr:hover {
+    background-color: #eaeaea; /* Efeito hover nas linhas */
+}
+
+th:first-child, td:first-child { border-left: none; }
+th:last-child, td:last-child { border-right: none; }
+tr:first-child th { border-top-left-radius: 8px; border-top-right-radius: 8px; }
+tr:last-child td { border-bottom-left-radius: 8px; border-bottom-right-radius: 8px; }
+
 /* Estilos do rodapé */
 footer {
     background-color: #7C73C0;
     color: white;
     padding: 20px;
     box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.1);
-}
-
-/* Transição de fade-in suave para as seções */
-.section {
-    opacity: 0;
-    transform: translateY(30px);
-    animation: fadeInUp 1s forwards ease-in-out;
 }
 
 /* Animação de aparecer suavemente */
@@ -94,7 +121,51 @@ footer {
 
 /* Responsividade */
 @media (max-width: 768px) {
-    h2 {
-        font-size: 1.5rem;
-    }
+    h2 { font-size: 1.5rem; }
+}
+
+/* Estilos da seção Habilidades */
+#habilidades {
+    padding: 60px 0; /* Ajustado para combinar com as outras seções */
+}
+
+.lista-habilidades {
+    display: flex;
+    justify-content: center;
+    flex-direction: column; /* Mudei para coluna para melhor visualização */
+}
+
+#habilidades .conteudo ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#habilidades .conteudo li {
+    display: flex;
+    font-size: 1.2em;
+    color: #555;
+    padding: 10px 0;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+#habilidades .conteudo li i {
+    font-size: 1.5em;
+    margin-right: 10px;
+    color: #555;
+    transition: color 0.3s ease;
+}
+
+/* Efeito hover */
+#habilidades .conteudo li:hover {
+    color: #222;
+    transform: translateX(5px);
+}
+
+#habilidades .conteudo li:hover i { color: #7C73C0; }
+
+/* Espaçamento entre ícones e texto */
+#habilidades .conteudo ul li:not(:last-child) {
+    margin-bottom: 15px;
 }
