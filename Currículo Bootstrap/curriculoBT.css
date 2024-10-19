@@ -103,6 +103,73 @@ th:last-child, td:last-child { border-right: none; }
 tr:first-child th { border-top-left-radius: 8px; border-top-right-radius: 8px; }
 tr:last-child td { border-bottom-left-radius: 8px; border-bottom-right-radius: 8px; }
 
+/* Estilo de Formulário */
+form {
+    background-color: #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+}
+
+/* Campo e Botão */
+.form-control, .form-select, .form-check-input {
+    border-radius: 5px;
+    border: 1px solid #c2cee2;
+    transition: border-color 0.3s ease;
+}
+
+.form-control:focus, .form-select:focus, .form-check-input:focus {
+    border-color: #7C73C0;
+    box-shadow: none;
+}
+
+/* Título do Formulário */
+legend {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #7C73C0;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+legend::after {
+    content: "";
+    width: 50px;
+    height: 3px;
+    background-color: #94ADD7;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+}
+
+/* Estilo dos Botões */
+button[type="submit"], button[type="reset"] {
+    border-radius: 5px;
+    padding: 8px 16px;
+    font-weight: bold;
+}
+
+button[type="submit"] {
+    background-color: #7C73C0;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #94ADD7;
+}
+
+button[type="reset"] {
+    background-color: #cccccc;
+    color: #333;
+    transition: background-color 0.3s ease;
+}
+
+button[type="reset"]:hover {
+    background-color: #bbbbbb;
+}
+
 /* Estilos do rodapé */
 footer {
     background-color: #7C73C0;
